@@ -1,0 +1,37 @@
+p {
+  color: red;
+}
+
+.training-card {
+  background-color: orange;
+  border: 5px solid black;
+  padding: 10px;
+}
+
+h1,
+h2 {
+  color: blue;
+}
+
+.training-card  li {
+    color: green;
+}
+
+.content-box > h2 {
+    color: paleturquoise;
+}
+
+.start-button {
+    color: aqua;
+    border: 4px solid blue;
+    padding: 15px;
+    background-color: blueviolet;
+}
+
+.start-button {
+    background-color: gold;
+}
+
+.accent-text {
+    color: purple;
+}
