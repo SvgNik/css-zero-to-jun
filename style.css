@@ -1,0 +1,49 @@
+.practice-section {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.practice-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.practice-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.practice-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.practice-list {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.practice-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+
+
+/*font-family
+font-size
+font-weight
+line-height
+letter-spacing
+text-align
+text-transform
+text-decoration */
