@@ -1,61 +1,26 @@
-.sticky-bar {
-  position: sticky;
-  top: 0;
-  background-color: lightgray;
-  padding: 10px;
-}
-
-.gare {
-  font-size: 100px;
-}
-
 .practice-card {
-  position: relative;
-  width: 750px;
-  height: auto;
-}
-
-.practice-badge {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: red;
-  color: white;
-  padding: 5px 10px;
-}
-
-.help-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: blue;
-  color: white;
-  border: none;
-  padding: 7px 20px;
-  cursor: pointer;
-}
-
-.layer-container {
-  position: relative;
-  margin-top: 30px;
-  width: 150px;
-  height: 100px;
-}
-
-.practice-layer-1 {
-  font-size: 18px;
+  width: 700px;
+  border: 1px solid black;
+  padding: 20px;
   background-color: bisque;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  left: 15px;
 }
 
-.practice-layer-2 {
-  font-size: 18px;
-  background-color: lightblue;
-  position: absolute;
-  z-index: 2;
-  top: 20px;
-  left: 5px;
+.text-content-overflow {
+  width: auto;
+  height: 150px;
+  border: 2px solid yellow;
+  overflow: auto;
+}
+
+.image-container {
+  width: 450px;
+  height: 350px;
+  border: 2px solid red;
+  overflow: hidden;
+}
+
+.practice-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
