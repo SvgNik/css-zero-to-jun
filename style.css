@@ -1,69 +1,61 @@
-.practice-title {
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  margin: 15px 0;
-}
-
-.practice-text {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-
-/* Внутри этого блока действий ты обязан сделать так, чтобы:
-
-Read more был block
-new был inline
-saved был inline-block
-hidden был none
-Обязательное условие
-
-Чтобы разница была реально видна, для new и saved задай одинаковые по смыслу оформительские свойства, например:
-
-фон;
-внутренний отступ;
-ширину или минимальную ширину.
-
-Тогда ты увидишь, как:
-
-inline ведет себя ограниченно;
-inline-block уже начинает вести себя как маленькая коробка.
-Что нужно понять после задачи
-
-После выполнения ты должен сам увидеть:
-
-почему block уводит элемент на новую строку;
-почему inline живет внутри строки;
-почему inline-block остается в строке, но удобнее для UI-элементов;
-почему display: none убирает элемент полностью.
-
-*/
-
-.link-block {
-  display: block;
-  color: blue;
-}
-
-.span-inline {
-  display: inline;
-  background-color: lightgreen;
+.sticky-bar {
+  position: sticky;
+  top: 0;
+  background-color: lightgray;
   padding: 10px;
-  width: 10px;
-  height: 10px;
 }
 
-.span-inline-block {
-  display: inline-block;
-  background-color: lightgreen;
-  padding: 10px;
-  width: 10px;
-  height: 10px;
-
+.gare {
+  font-size: 100px;
 }
 
+.practice-card {
+  position: relative;
+  width: 750px;
+  height: auto;
+}
 
-.span-none {
-  display: none;
+.practice-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+}
+
+.help-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.layer-container {
+  position: relative;
+  margin-top: 30px;
+  width: 150px;
+  height: 100px;
+}
+
+.practice-layer-1 {
+  font-size: 18px;
+  background-color: bisque;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 15px;
+}
+
+.practice-layer-2 {
+  font-size: 18px;
+  background-color: lightblue;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 5px;
 }
