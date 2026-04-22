@@ -4,42 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Media card</title>
+  <title>Simple dashboard header + cards row</title>
 </head>
 
 <body>
+  <header class="header-container">
+    <span class="logo">DevTrack</span>
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="profile-button">Profile</button>
+  </header>
+
   <main>
-    <section class="practice-card">
-      <div class="card-header">
-        <p>Media card</p>
-        <h2>Я учусь управлять переполнением и изображением</h2>
-        <p>Сейчас я тренирую overflow и object-fit, чтобы текст и изображения вели себя предсказуемо внутри контейнера.
-        </p>
-        <button class="open-card" type="button">Открыть карточку</button>
-      </div>
-      <div class="text-content-overflow">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi iure, illum quisquam nam eveniet beatae ipsa
-          ipsum soluta et sunt eum consequuntur dicta aliquam esse quo quis, dolorum rem consectetur? Lorem ipsum, dolor
-          sit
-          amet consectetur adipisicing elit. Minus, ullam quia itaque illum sequi accusamus sit quam architecto nostrum
-          consequatur quas fuga temporibus dolorum saepe non quis in, veniam optio. Lorem ipsum dolor, sit amet
-          consectetur
-          adipisicing elit. Quibusdam veritatis dicta ipsam. Sequi libero repellendus laudantium saepe reprehenderit
-          magni
-          ratione quas totam! Recusandae minima iusto dolor excepturi voluptatem consequuntur corporis.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet unde optio, magni mollitia nobis commodi odio
-          ullam
-          sunt? Doloribus tempore numquam ut ab labore voluptates illo iure soluta dolores repellendus.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor culpa molestiae animi expedita eveniet maiores
-          tempore, quo voluptas? Blanditiis soluta commodi nostrum pariatur velit magni! Aspernatur molestiae amet
-          aliquid
-          veritatis?
-        </p>
+    <section class="card-container">
+      <div class="card">
+        <span class="card-label">HTML</span>
+        <h2 class="card-title">Structure</h2>
+        <p class="card-description">Я учусь строить понятную и чистую разметку.</p>
       </div>
 
-      <div class="image-container"><img class="practice-image" src="/image/geralt-ai-generated-8211245_1920.jpg"
-          alt="Описание изображения"></div>
+      <div class="card">
+        <span class="card-label">CSS</span>
+        <h2 class="card-title">Layout</h2>
+        <p class="card-description">Я тренируюсь управлять расположением элементов.</p>
+      </div>
+
+      <div class="card">
+        <span class="card-label">Practice</span>
+        <h2 class="card-title">Consistency</h2>
+        <p class="card-description">Я довожу каждый блок до понятного результата.</p>
+      </div>
     </section>
   </main>
 </body>
