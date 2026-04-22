@@ -5,43 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Simple dashboard header + cards row</title>
+  <title>Mini dashboard grid</title>
 </head>
 
 <body>
-  <header class="header-container">
-    <span class="logo">DevTrack</span>
-    <nav class="navigation">
-      <ul class="nav-list">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Settings</a></li>
-      </ul>
-    </nav>
-    <button type="button" class="profile-button">Profile</button>
-  </header>
-
   <main>
-    <section class="card-container">
-      <div class="card">
-        <span class="card-label">HTML</span>
-        <h2 class="card-title">Structure</h2>
-        <p class="card-description">Я учусь строить понятную и чистую разметку.</p>
-      </div>
+    <section class="dashboard-grid-section">
+      <span>Dashboard Grid</span>
+      <h1>Я учусь раскладывать элементы по сетке</h1>
 
-      <div class="card">
-        <span class="card-label">CSS</span>
-        <h2 class="card-title">Layout</h2>
-        <p class="card-description">Я тренируюсь управлять расположением элементов.</p>
-      </div>
+      <div class="grid-container">
+        <div class="card">
+          <span>HTML</span>
+          <h2>Structure</h2>
+          <p>Я умею строить чистую разметку.</p>
+        </div>
 
-      <div class="card">
-        <span class="card-label">Practice</span>
-        <h2 class="card-title">Consistency</h2>
-        <p class="card-description">Я довожу каждый блок до понятного результата.</p>
+        <div class="card big-card">
+          <span>CSS</span>
+          <h2>Spacing</h2>
+          <p>Я контролирую отступы и размеры блоков.</p>
+        </div>
+
+        <div class="card">
+          <span>Layout</span>
+          <h2>Flexbox</h2>
+          <p>Я умею выстраивать элементы по одной оси.</p>
+        </div>
+
+        <div class="card">
+          <span>Layout</span>
+          <h2>Grid</h2>
+          <p>Я учусь работать с колонками и строками.</p>
+        </div>
+
+        <div class="card">
+          <span>Practice</span>
+          <h2>Consistency</h2>
+          <p>Я довожу блоки до понятного результата.</p>
+        </div>
       </div>
     </section>
   </main>
+
 </body>
 
 </html>
