@@ -5,49 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Mini dashboard grid</title>
+  <title>Course teaser section</title>
 </head>
 
 <body>
   <main>
-    <section class="dashboard-grid-section">
-      <span>Dashboard Grid</span>
-      <h1>Я учусь раскладывать элементы по сетке</h1>
+    <section class="main-section">
+      <section class="frontend-path-section">
+        <span>Frontend Path</span>
+        <h1>Я учусь делать секции адаптивными</h1>
+        <p>Сейчас я тренирую mobile-first подход, media queries и перестройку layout под ширину экрана.</p>
+        <button type="button">Продолжить обучение</button>
+      </section>
 
-      <div class="grid-container">
-        <div class="card">
-          <span>HTML</span>
-          <h2>Structure</h2>
-          <p>Я умею строить чистую разметку.</p>
-        </div>
-
-        <div class="card big-card">
-          <span>CSS</span>
-          <h2>Spacing</h2>
-          <p>Я контролирую отступы и размеры блоков.</p>
-        </div>
-
-        <div class="card">
-          <span>Layout</span>
-          <h2>Flexbox</h2>
-          <p>Я умею выстраивать элементы по одной оси.</p>
-        </div>
-
-        <div class="card">
-          <span>Layout</span>
-          <h2>Grid</h2>
-          <p>Я учусь работать с колонками и строками.</p>
-        </div>
-
-        <div class="card">
-          <span>Practice</span>
-          <h2>Consistency</h2>
-          <p>Я довожу блоки до понятного результата.</p>
-        </div>
+      <div class="skills-list">
+        <ul class="skills-list-items">
+          <li class="skills-list-item">
+            <h2>HTML</h2>
+            <p>Чистая структура</p>
+          </li>
+          <li class="skills-list-item">
+            <h2>CSS</h2>
+            <p>Гибкий layout</p>
+          </li>
+          <li class="skills-list-item">
+            <h2>Responsive</h2>
+            <p>Адаптация под экран</p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
-
 </body>
 
 </html>
