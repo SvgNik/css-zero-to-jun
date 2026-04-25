@@ -5,37 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Course teaser section</title>
+  <title>Interactive action panel</title>
 </head>
 
 <body>
   <main>
     <section class="main-section">
-      <section class="frontend-path-section">
-        <span>Frontend Path</span>
-        <h1>Я учусь делать секции адаптивными</h1>
-        <p>Сейчас я тренирую mobile-first подход, media queries и перестройку layout под ширину экрана.</p>
-        <button type="button">Продолжить обучение</button>
-      </section>
+      <div class="group-title">
+        <h1 class="main-title">Interactive States</h1>
+        <p>Я учусь делать интерфейс не только красивым, но и понятным в разных состояниях.</p>
+      </div>
 
-      <div class="skills-list">
-        <ul class="skills-list-items">
-          <li class="skills-list-item">
-            <h2>HTML</h2>
-            <p>Чистая структура</p>
-          </li>
-          <li class="skills-list-item">
-            <h2>CSS</h2>
-            <p>Гибкий layout</p>
-          </li>
-          <li class="skills-list-item">
-            <h2>Responsive</h2>
-            <p>Адаптация под экран</p>
-          </li>
+      <div class="group-links">
+        <a class="main-link" href="#">Documentation</a>
+        <a class="main-link" href="#">Roadmap</a>
+      </div>
+
+      <div class="group-button">
+        <button class="main-button" type="button">Start</button>
+        <button class="main-button" type="button">Save</button>
+        <button class="main-button" type="button" disabled>Disabled action</button>
+      </div>
+
+      <div class="group-list">
+        <ul class="main-list">
+          <li class="list-item">HTML</li>
+          <li class="list-item">CSS</li>
+          <li class="list-item">JavaScript</li>
+          <li class="list-item">React</li>
         </ul>
       </div>
     </section>
   </main>
+
 </body>
 
 </html>
