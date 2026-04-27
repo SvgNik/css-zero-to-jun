@@ -15,82 +15,59 @@ body {
   margin: 0;
 }
 
+
 .main-section {
-  background-color: #ffffffd0
-}
-
-.group-title {
-  padding: 10px;
-}
-
-.group-links {
+  background-color: #ffffffd0;
   display: flex;
-  gap: 10px;
-  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
 }
 
-.main-link {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  cursor: pointer;
-  padding: 5px;
-}
-
-.main-link:hover {
-  color: blue;
-  background-color: #dbe2ea;
-  border-radius: 10px;
-}
-
-.main-link:focus-visible {
-  outline: 3px solid blue;
-  outline-offset: 2px;
-  background-color: #dbe2ea;
-  color: blue;
-  border-radius: 10px;
-}
-
-.group-button {
-  padding: 10px;
-}
-
-.main-button {
-  padding: 8px 24px;
-  border: 1px solid #cccccc;
-  background-color: #dbe2ea;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.main-button:hover {
-  color: blue;
-}
-
-.main-button:focus-visible {
-  outline: 3px solid blue;
-  background-color: #dbe2ea;
-  outline-offset: 1px;
-}
-
-.main-button:disabled {
-  opacity: 0.5;
-  background-color: #cccccc;
-  color: #666666;
-  cursor: not-allowed;
-}
-
-.main-list {
+.container {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.list-item {
-  padding: 10px;
+.decorative-accents-card {
+  padding: 8px 12px;
 }
 
-.list-item:first-child {
-  color: orangered;
-  font-weight: bold;
+.label-accents-card {
+  position: relative;
+  display: block;
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.label-accents-card::before {
+  content: "";
+  position: absolute;
+  background-color: #2563eb;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 2px;
+}
+
+.title-accents-card {
+  display: inline-block;
+  margin: 0;
+}
+
+.title-accents-card::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #2563eb;
+  height: 2px;
+  margin-top: 4px;
 }
