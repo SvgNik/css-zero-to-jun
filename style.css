@@ -15,16 +15,18 @@ body {
   margin: 0;
 }
 
+.main-section {
+  background-color: #ffffffd0
+}
+
 .group-title {
   padding: 10px;
-  background-color: lightblue;
 }
 
 .group-links {
   display: flex;
   gap: 10px;
   padding: 10px;
-  background-color: lightgreen;
 }
 
 .main-link {
@@ -36,39 +38,38 @@ body {
 }
 
 .main-link:hover {
-  color: aliceblue;
-  background-color: rgb(134, 233, 134);
+  color: blue;
+  background-color: #dbe2ea;
   border-radius: 10px;
 }
 
 .main-link:focus-visible {
-  outline: 3px solid whitesmoke;
+  outline: 3px solid blue;
   outline-offset: 2px;
-  background-color: rgb(134, 233, 134);
-  color: aliceblue;
+  background-color: #dbe2ea;
+  color: blue;
   border-radius: 10px;
 }
 
 .group-button {
   padding: 10px;
-  background-color: bisque;
 }
 
 .main-button {
-  padding: 10px;
-  background-color: greenyellow;
-  border: none;
+  padding: 8px 24px;
+  border: 1px solid #cccccc;
+  background-color: #dbe2ea;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .main-button:hover {
-  color: aliceblue;
-  background-color: darkblue;
+  color: blue;
 }
 
 .main-button:focus-visible {
-  outline: 3px solid darkblue;
+  outline: 3px solid blue;
+  background-color: #dbe2ea;
   outline-offset: 1px;
 }
 
@@ -77,10 +78,6 @@ body {
   background-color: #cccccc;
   color: #666666;
   cursor: not-allowed;
-}
-
-.group-list {
-  background-color: lightgray;
 }
 
 .main-list {
