@@ -27,35 +27,44 @@ body {
   padding: 12px;
 }
 
-.interactive-title {
+.animated-badge-title {
   margin: 0;
   padding: 8px 0px;
 }
 
-.interactive-paragraph {
+.animated-badge-paragraph {
   margin: 0;
 }
 
-.interactive-link {
-  color: #222;
-  text-decoration: none;
+.animated-badge {
   align-self: flex-start;
-  padding: 8px 0px;
-  border-radius: 12px;
-  transition: background-color 200ms ease, transform 200ms ease;
+  background-color: #dbeafe;
+  padding: 6px 8px;
+  border-radius: 999px;
+  animation-name: pulse;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
-.interactive-link:hover {
-  background-color: #e5e7eb;
-  transform: scale(1.03);
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.06);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
-.interactive-link:focus-visible {
-  outline: 3px solid #60a5fa;
-  outline-offset: 2px;
-}
-
-.interactive-button {
+.animated-badge-button {
   background-color: #e5e7eb;
   border: 1px solid black;
   border-radius: 8px;
@@ -65,12 +74,12 @@ body {
   transition: background-color 200ms ease, transform 200ms ease;
 }
 
-.interactive-button:hover {
+.animated-badge-button:hover {
   background-color: #28c41a;
   transform: scale(1.03);
 }
 
-.interactive-button:focus-visible {
+.animated-badge-button:focus-visible {
   outline: 3px solid #60a5fa;
   outline-offset: 2px;
 }
