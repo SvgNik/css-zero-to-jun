@@ -27,59 +27,83 @@ body {
   padding: 12px;
 }
 
-.animated-badge-title {
+.decorative-elements-title {
   margin: 0;
-  padding: 8px 0px;
+  padding: 8px 16px;
+  position: relative;
 }
 
-.animated-badge-paragraph {
+.decorative-elements-title::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  transform: translateY(-50%);
+}
+
+.decorative-elements-paragraph {
   margin: 0;
 }
 
-.animated-badge {
+.decorative-elements-link {
+  padding: 8px 8px;
   align-self: flex-start;
-  background-color: #dbeafe;
-  padding: 6px 8px;
-  border-radius: 999px;
-  animation-name: pulse;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #2563eb;
+  border-radius: 15px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    transform: scale(1.06);
-    opacity: 0.8;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+.decorative-elements-link:hover {
+  opacity: 1;
 }
 
-.animated-badge-button {
-  background-color: #e5e7eb;
+.decorative-elements-link::after {
+  content: "→";
+  margin-left: 16px;
+  transition: transform 200ms ease;
+  display: inline-block;
+
+}
+
+.decorative-elements-link:hover::after {
+  transform: translateX(4px);
+}
+
+.decorative-elements-link:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+
+.decorative-elements-button {
+  background-color: #2563eb;
+  color: white;
   border: 1px solid black;
   border-radius: 8px;
   align-self: flex-start;
   padding: 8px 12px;
   cursor: pointer;
-  transition: background-color 200ms ease, transform 200ms ease;
+
+  opacity: 0.8;
+
+  transition: background-color 200ms ease, transform 200ms ease, opacity 0.3s ease;
 }
 
-.animated-badge-button:hover {
-  background-color: #28c41a;
+.decorative-elements-button:hover {
   transform: scale(1.03);
+  opacity: 1;
+
 }
 
-.animated-badge-button:focus-visible {
+.decorative-elements-button:focus-visible {
   outline: 3px solid #60a5fa;
   outline-offset: 2px;
 }
