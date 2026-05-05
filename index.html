@@ -5,11 +5,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Adaptive Learning Dashboard</title>
 </head>
 
 <body>
-  <main></main>
+  <header class="site-header">
+    <span class="header-logo">DevTrack</span>
+    <nav class="header-nav">
+      <ul class="header-main-list">
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#">Roadmap</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#">Practice</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#">Progress</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header-button" type="button">Continue</button>
+  </header>
+
+  <main>
+    <section class="hero-intro">
+      <div class="hero-content">
+        <span class="hero-label">Frontend Journey</span>
+        <h1 class="hero-title">Я собираю финальный CSS-проект</h1>
+        <p class="hero-paragraph">Этот проект объединяет layout, адаптив, состояния, переменные и аккуратную организацию
+          стилей.</p>
+        <div class="hero-actions">
+          <button class="hero-button" type="button">Start practice</button>
+          <button class="hero-button" type="button">View roadmap</button>
+        </div>
+      </div>
+
+      <div class="focus-card">
+        <span class="focus-current">Current focus</span>
+        <span class="focus-project">CSS Final Project</span>
+        <span class="focus-meta">HTML, CSS, responsive, states</span>
+      </div>
+    </section>
+
+    <section class="skills-checklist">
+      <h2 class="skills-title">Что я закрепляю</h2>
+      <ul class="skills-list">
+        <li class="skill-card">
+          <span class="skill-name">HTML</span>
+          <p class="skill-description">Семантическая структура</p>
+        </li>
+        <li class="skill-card">
+          <span class="skill-name">CSS</span>
+          <p class="skill-description">Чистая организация стилей</p>
+        </li>
+        <li class="skill-card">
+          <span class="skill-name">Flexbox</span>
+          <p class="skill-description">Выравнивание по одной оси</p>
+        </li>
+        <li class="skill-card">
+          <span class="skill-name">Grid</span>
+          <p class="skill-description">Сетка карточек</p>
+        </li>
+        <li class="skill-card">
+          <span class="skill-name">Responsive</span>
+          <p class="skill-description">Адаптация под экран</p>
+        </li>
+        <li class="skill-card">
+          <span class="skill-name">States</span>
+          <p class="skill-description">Hover, focus и disabled</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="progress-section">
+      <h2 class="progress-title">Мой прогресс</h2>
+      <ul class="progress-list">
+        <li class="progress-card">
+          <span class="progress-label">Completed blocks</span>
+          <strong class="progress-value">17</strong>
+        </li>
+        <li class="progress-card">
+          <span class="progress-label">Current project</span>
+          <strong class="progress-value">Final CSS</strong>
+        </li>
+        <li class="progress-card">
+          <span class="progress-label">Next step</span>
+          <strong class="progress-value">JavaScript basics</strong>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-text">Built as part of my frontend learning path.</span>
+  </footer>
 </body>
 
 </html>
